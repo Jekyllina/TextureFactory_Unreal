@@ -12,8 +12,8 @@
 
 struct Square
 {	
-	TArray<int32> TopLeft{};
-	TArray<int32> BottomRight{};
+	FVector2D TopLeft{};
+	FVector2D BottomRight{};
 	FColor Color;
 };
 

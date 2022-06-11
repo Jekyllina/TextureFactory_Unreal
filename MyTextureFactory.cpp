@@ -43,10 +43,10 @@ UObject* UMyTextureFactory::FactoryCreateFile(UClass* InClass, UObject* InParent
 		{
 			Square MySquare;
 
-			MySquare.TopLeft.Add(FCString::Atoi(*TextureValues[1]));
-			MySquare.TopLeft.Add(FCString::Atoi(*TextureValues[2]));
-			MySquare.BottomRight.Add(FCString::Atoi(*TextureValues[3]));
-			MySquare.BottomRight.Add(FCString::Atoi(*TextureValues[4]));
+			MySquare.TopLeft.X = FCString::Atoi(*TextureValues[1]);
+			MySquare.TopLeft.Y = FCString::Atoi(*TextureValues[2]);
+			MySquare.BottomRight.X = FCString::Atoi(*TextureValues[3]);
+			MySquare.BottomRight.Y = FCString::Atoi(*TextureValues[4]);
 
 			MySquare.Color.R = FCString::Atoi(*TextureValues[5]);
 			MySquare.Color.G = FCString::Atoi(*TextureValues[6]);
